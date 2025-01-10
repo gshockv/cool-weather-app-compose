@@ -11,6 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.gshockv.cwapp.ui.components.ActionBar
+import com.gshockv.cwapp.ui.components.AirQuality
 import com.gshockv.cwapp.ui.components.DailyForecast
 import com.gshockv.cwapp.ui.theme.ColorBackground
 import com.gshockv.cwapp.ui.theme.CoolWeatherAppTheme
@@ -35,6 +36,10 @@ fun MainAppScreen() {
         modifier = Modifier.height(12.dp)
       )
       DailyForecast()
+      Spacer(
+        modifier = Modifier.height(16.dp)
+      )
+      AirQuality()
     }
 
   }
